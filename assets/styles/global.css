@@ -1,0 +1,307 @@
+:root {
+    --sigalei-bcg-red: rgb(202, 0, 50);
+    --sigalei-bcg-white: rgb(255, 255, 255);
+
+    --sigalei-blue-light: #2a1ca3;
+    /* versão mais clara para hover/efeitos */
+    --sigalei-text-light: #f5f5f5;
+    --sigalei-text-white: #ffffff;
+    /* texto em fundos escuros */
+    --sigalei-text-dark: #313131;
+
+    --font-main: 14px;
+
+    --background: #f0f0f0;
+  --card: #ffffff;
+  --primary-rgb: 202, 0, 50; /* azul, sem alpha */
+}
+
+@font-face {
+    font-family: Archivo_Condensed;
+    src: url("./Montserrat-Regular.ttf");
+}
+
+* {
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    font-family: Archivo_Condensed, sans-serif;
+    font-size: var(--font-main);
+    letter-spacing: 1px;
+    z-index: 0;
+    text-decoration: none;
+    list-style: none;
+    font-style: normal;
+    outline: 0;
+    transition: all 0.5s;
+    color: var(--sigalei-text-dark);
+    background-color: transparent;
+    font-weight: 500;
+}
+
+::placeholder {
+    color: var(--sigalei-text-light);
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    min-height: 100vh;
+    margin: 0;
+    background: var(--sigalei-bcg-white);
+}
+
+html, body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* ajusta conforme necessário */
+  overflow: hidden;
+}
+
+/* Background Effects */
+.bg-gradient {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(to bottom, var(--background), var(--background), var(--card));
+  z-index: 1;
+}
+
+.bg-radial {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(ellipse at top, rgba(var(--primary-rgb), 0.1), transparent, transparent);
+  z-index: 2;
+}
+
+/* Grid Pattern */
+.bg-grid {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image:
+    linear-gradient(to right, rgba(128, 128, 128, 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(128, 128, 128, 0.07) 1px, transparent 1px);
+  background-size: 24px 24px;
+  z-index: 3;
+}
+
+
+.contente-body {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/*HEADER CONTENTES*/
+.header-body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 40000;
+    width: 100%;
+    max-height: 70px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 0 0;
+}
+
+.content-header {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+    padding: 0 10px;
+    background-color: rgba(202, 0, 50, 0.123);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: solid 1px rgba(202, 0, 50, 0.26);
+
+    .logo-sigalei {
+        width: auto;
+        height: 80px;
+        cursor: pointer;
+    }
+
+
+    .nav-header {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .list-itens-nav {
+            min-width: 47%;
+            width: auto;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0%;
+
+            li a{
+                font-weight: 700;
+                cursor: pointer;
+            }
+
+            li a:hover{
+                color: var(--sigalei-bcg-red);
+                transform: scale(1.1);
+            }
+        }
+
+        .itens-btn {
+            width: 25%;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: space-around;
+
+
+            button{
+                cursor: pointer;
+                padding: 10px 10px;
+                font-weight: 700;
+            }
+            .btnSign{
+                border-radius: 20px;
+                background-color: var(--sigalei-bcg-red);
+                color: var(--sigalei-bcg-white);
+                width: 100px;
+            }
+            .btnSign:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .menu-mobile {
+        display: none;
+    }
+}
+
+
+/*MAIN CONTENT*/
+.main-body{
+    width: 100%;
+    height: auto;
+    padding: 100px 0 0 0;
+}
+
+.main-body .content-hero{
+    width: 60%;
+    height: 40vh;
+    padding: 30px 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .title{
+        text-align: center;
+        font-size: 60px;
+        font-weight: 700;
+        i{
+            font-size: 60px;
+            font-weight: 700;
+            color: rgb(202, 0, 50);
+        }
+    }
+
+    p{
+        width: 70%;
+        text-align: center;
+        padding: 30px 0;
+        font-size: 20px;
+    }
+
+    .btn-cta{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3%;
+
+        button{
+            cursor: pointer;
+            color: var(--sigalei-bcg-white);
+            font-weight: 700;
+            border-radius: 10px;
+            padding: 15px 30px;
+        }
+
+        .btnHelp{
+            background-color: var(--sigalei-bcg-red);
+        }
+        .btnShow{
+            background-color: rgba(202, 0, 50, 0.596);
+        }
+    }
+}
+
+/*SET RESPONSIVE PAGE*/
+@media (max-width: 480px){
+    .content-header{
+        width: 90%;
+        .nav-header{
+            display: none;
+        }
+        .menu-mobile{
+            display: flex;
+            i{
+                font-size: 25px;
+                color: var(--sigalei-bcg-red);
+            }
+        }
+    }
+
+    .main-body{
+        padding: 10px 0 0 0;
+    }
+    .main-body .content-hero{
+        height: 100vh;
+        width: 90%;
+        padding: 10px 5%;
+
+        .title{
+            width: 100%;
+            font-size: 32px;
+            i{
+                font-size: 32px;
+            }
+        }
+        p{
+            width: 100%;
+        }
+        .btn-cta{
+            flex-direction: column;
+
+            button{
+                width: 100%;
+                margin-bottom: 2%;
+            }
+        }
+    }
+}
