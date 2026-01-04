@@ -514,11 +514,11 @@ html, body {
 }
 
 /*SET RESPONSIVE PAGE*/
-@media (max-width: 1285px) {
+@media (max-width: 1485px) {
 
   /* laptops pequenos */
   .content-header {
-    width: 70%;
+    width: 80%;
   }
 
   .main-body {
@@ -530,12 +530,49 @@ html, body {
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 890px) {
 
   /* tablets */
   .content-header {
     width: 90%;
+
+     .nav-header {
+      .list-itens-nav{
+        width: 60%;
+      }
+
+      .itens-btn{
+      width: 30%;
+     }
+     }
+     
   }
+
+   .main-body {
+    padding: 5px 0 0 0;
+  }
+
+  .main-body .content-hero {
+    width: 75%;
+    padding: 0 12.5%;
+    height: 60vh;
+
+    .title {
+      width: 100%;
+      font-size: 40px;
+
+      i{
+        font-size: 40px;
+      }
+    }
+
+    p {
+      width: 100%;
+      font-size: 15px;
+      padding: 20px 0 40px 0;
+    }
+  }
+
 
 }
 
