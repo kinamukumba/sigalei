@@ -459,7 +459,8 @@ html, body {
 @media (max-width: 700px) {
   /* telemóveis */
   .content-header {
-    width: 90%;
+    width: 80%;
+    padding: 0 5%;
 
     .nav-header {
       display: none;
