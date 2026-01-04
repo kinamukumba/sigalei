@@ -287,7 +287,87 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   padding: 20px 0 0 0;
+}
+
+.content-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 41000;
+  width: 80%;
+  height: 100vh;
+  padding: 40px 10%;
+  background-color: rgba(202, 0, 50, 0.37);
+  backdrop-filter: blur(20px);
+  transform: translateX(-200%);
+
+  .close-menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--sigalei-bcg-white);
+    }
+
+    i {
+      font-size: 20px;
+      color: var(--sigalei-bcg-red);
+      display: flex;
+      flex-direction: row;
+      margin-left: auto;
+    }
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+
+    li {
+      padding: 15px 0;
+      font-size: 16px;
+
+      a {
+        color: var(--sigalei-bcg-white);
+      }
+    }
+
+
+
+    button {
+      cursor: pointer;
+      padding: 10px 10px;
+      font-weight: 700;
+      color: var(--sigalei-bcg-white);
+      border: solid 1px var(--sigalei-bcg-red);
+      border-radius: 20px;
+      width: 100%;
+    }
+
+    .btnSign {
+      background-color: var(--sigalei-bcg-red);
+      color: var(--sigalei-bcg-white);
+    }
+
+    .btnSign:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  nav .itens-btn li {
+    padding: 5px 0;
+    gap: 0;
+  }
+}
+
+.content-menu.open {
+  transform: translateX(0%);
 }
 
 .content-header {
@@ -435,10 +515,12 @@ html, body {
 
 /*SET RESPONSIVE PAGE*/
 @media (max-width: 1285px) {
+
   /* laptops pequenos */
   .content-header {
     width: 70%;
   }
+
   .main-body {
     padding: 5px 0 0 0;
   }
@@ -449,14 +531,16 @@ html, body {
 }
 
 @media (max-width: 860px) {
+
   /* tablets */
   .content-header {
     width: 90%;
   }
-  
+
 }
 
 @media (max-width: 700px) {
+
   /* telemóveis */
   .content-header {
     width: 80%;
