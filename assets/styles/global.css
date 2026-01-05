@@ -329,10 +329,15 @@ button:hover{
     }
   }
 
+  nav{
+    border-top: solid 2px rgba(202, 0, 50, 0.26);
+    margin-top: 30px;
+  }
+
   nav ul {
     display: flex;
     flex-direction: column;
-    padding-top: 50px;
+    padding-top: 20px;
 
     li {
       padding: 15px 0;
