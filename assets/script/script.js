@@ -13,3 +13,23 @@ if (optionMenu) {
     menu.classList.remove("open");
   };
 }
+
+
+/*Make links*/
+const authPath = document.querySelectorAll('.itens-btn li button,' + '.content-menu .itens-btn li button');
+if(authPath){
+  console.log(authPath);
+  
+  authPath[0].onclick = ()=>{
+    window.location.href = './auth/login.html'
+  }
+  authPath[1].onclick = ()=>{
+    window.location.href = './auth/sign-up.html'
+  }
+  authPath[2].onclick = ()=>{
+    window.location.href = './auth/login.html'
+  }
+  authPath[3].onclick = ()=>{
+    window.location.href = './auth/sign-up.html'
+  }
+}
