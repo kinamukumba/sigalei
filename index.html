@@ -107,13 +107,14 @@
         <div class="contente-body" id="content-body">
             <header class="header-body open-menu">
                 <div class="content-header">
-                    <div class="content-logo">
-                        <img src="./assets/public/siga_logo1.png" alt="logo-sigalei"
+                    <a href="#" class="content-logo">
+                        <img src="./assets/public/siga_logo1.png"
+                            alt="logo-sigalei"
                             class="logo-sigalei">
-                    </div>
+                    </a>
                     <nav class="nav-header">
                         <ul class="list-itens-nav">
-                            <li class="item-nav"><a href="#">Sobre</a></li>
+                            <li class="item-nav"><a href="#about">Sobre</a></li>
                             <li class="item-nav"><a href="#">Como
                                     funciona</a></li>
                             <li class="item-nav"><a href="#">Serviços</a></li>
@@ -132,60 +133,78 @@
                 </div>
             </header>
             <div class="content-menu">
-                    <div class="close-menu">
-                        <h3>Menu</h3>
-                        <i class="ri-close-large-line"></i>
-                    </div>
-                    <nav class="nav-header">
-                        <ul class="list-itens-nav">
-                            <li class="item-nav"><a href="#">Sobre</a></li>
-                            <li class="item-nav"><a href="#">Como
-                                    funciona</a></li>
-                            <li class="item-nav"><a href="#">Serviços</a></li>
-                            <li class="item-nav"><a href="#">Planos</a></li>
-                        </ul>
-                        <ul class="itens-btn">
-                            <li class="item-nav"><button class="btnLogin"
-                                    id="btnLogin">Entrar</button></li>
-                            <li class="item-nav"><button class="btnSign"
-                                    id="btnSign">Cadastrar</button></li>
-                        </ul>
-                    </nav>
+                <div class="close-menu">
+                    <h3>Menu</h3>
+                    <i class="ri-close-large-line"></i>
                 </div>
-            <main class="main-body bg-grid">
-                <div class="content-hero">
-                    <h1 class="title">Resolva seu problema <i>jurídico</i> de
-                        forma simples, segura e online</h1>
-                    <p class="text">Conectamos você a advogados certificados com
-                        total sigilo e rapidez, sem sair de casa.</p>
-                    <div class="btn-cta">
-                        <button class="btnHelp">Preciso de ajuda</button>
-                        <a href="#"><button class="btnShow">Ver Como
-                                Funciona</button></a>
+                <nav class="nav-header">
+                    <ul class="list-itens-nav">
+                        <li class="item-nav"><a href="#">Sobre</a></li>
+                        <li class="item-nav"><a href="#">Como
+                                funciona</a></li>
+                        <li class="item-nav"><a href="#">Serviços</a></li>
+                        <li class="item-nav"><a href="#">Planos</a></li>
+                    </ul>
+                    <ul class="itens-btn">
+                        <li class="item-nav"><button class="btnLogin"
+                                id="btnLogin">Entrar</button></li>
+                        <li class="item-nav"><button class="btnSign"
+                                id="btnSign">Cadastrar</button></li>
+                    </ul>
+                </nav>
+            </div>
+            <main class="main-body">
+                <section class="bg-grid">
+                    <div class="content-hero">
+                        <h1 class="title">Resolva seu problema <i>jurídico</i>
+                            de
+                            forma simples, segura e online</h1>
+                        <p class="text">Conectamos você a advogados certificados
+                            com
+                            total sigilo e rapidez, sem sair de casa.</p>
+                        <div class="btn-cta">
+                            <button class="btnHelp">Preciso de ajuda</button>
+                            <a href="#"><button class="btnShow">Ver Como
+                                    Funciona</button></a>
+                        </div>
+                        <div class="info-numbers">
+                            <div class="card-num">
+                                <div class="icon">
+                                    <i class="ri-file-search-line"></i>
+                                </div>
+                                <p>Consultas ilimitadas</p>
+                            </div>
+
+                            <div class="card-num">
+                                <div class="icon">
+                                    <i class="ri-file-pdf-2-line"></i>
+                                </div>
+                                <p>Elaboração e revisão de documentos</p>
+                            </div>
+
+                            <div class="card-num">
+                                <div class="icon">
+                                    <i class="ri-calendar-schedule-line"></i>
+                                </div>
+                                <p>Urgência jurídica 24 horas</p>
+                            </div>
+
+                            <div class="card-num">
+                                <div class="icon">
+                                    <i class="ri-auction-line"></i>
+                                </div>
+                                <p>+20 Advogados</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="info-numbers">
-                        <div class="card-num">
-                            <i class="ri-file-search-line"></i>
-                            <p>Consultas ilimitadas</p>
-                        </div>
+                </section>
 
-                        <div class="card-num">
-                            <i class="ri-file-pdf-2-line"></i>
-                            <p>Elaboração e revisão de documentos</p>
-                        </div>
-
-                        <div class="card-num">
-                            <i class="ri-calendar-schedule-line"></i>
-                            <p>Urgência jurídica 24 horas</p>
-                        </div>
-
-                        <div class="card-num">
-                            <i class="ri-auction-line"></i>
-                            <p>+20 Advogados</p>
-                        </div>
-                    </div>
-                </div>
-            </main>
+                <section class="content-about section-flex" id="about">
+                    <p class="subtitle">Quem somos?</p>
+                    <h2 class="title">Visão Geral da <i>Plataforma</i></h2>
+                    
+                </section>
+            </main>nb   
         </div>
 
         <script src="./hooks/useLoadPage.js"></script>
