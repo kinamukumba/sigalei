@@ -531,13 +531,17 @@ button:hover{
   .info-numbers{
     width: 100%;
     height: auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    place-items: center;
     padding: 70px 0;
+    gap: 5%;
 
     .card-num{
+      width: 100%;
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -584,7 +588,14 @@ button:hover{
   .main-body .content-hero {
     height:auto;
     padding: 150px 20%;
+
+
+    .info-numbers{
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
+
+
 }
 
 /*@media (max-width: 1000px){
@@ -629,6 +640,10 @@ button:hover{
       width: 100%;
       font-size: 15px;
       padding: 20px 0 40px 0;
+    }
+
+    .info-numbers{
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
@@ -692,10 +707,12 @@ button:hover{
     .info-numbers{
       flex-direction: column;
       gap: 5%;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 3%;
 
       .card-num{
         width: 90%;
-        margin-bottom: 2%;
+        margin-bottom: 1%;
       }
     }
   }
