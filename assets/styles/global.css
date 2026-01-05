@@ -685,5 +685,15 @@ button:hover{
         margin-bottom: 2%;
       }
     }
+
+    .info-numbers{
+      flex-direction: column;
+      gap: 5%;
+
+      .card-num{
+        width: 90%;
+        margin-bottom: 2%;
+      }
+    }
   }
 }
