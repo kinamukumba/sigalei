@@ -542,6 +542,7 @@ button:hover{
 
     .card-num{
       width: 100%;
+      min-height: 120px;
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -556,10 +557,10 @@ button:hover{
       }
 
       p{
-        width: 80%;
         padding: 10px 0;
         font-size: 18px;
         text-align: center;
+        font-weight: 700;
       }
     }
 
