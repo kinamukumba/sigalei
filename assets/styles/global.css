@@ -76,7 +76,7 @@ button:hover {
 .background-container {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: auto;
   /* ajusta conforme necessário */
   overflow: hidden;
 }
@@ -885,6 +885,9 @@ button:hover {
 @media (max-width: 800px) {
 
   /* telemóveis */
+  .background-container{
+    height: 200vh;
+  }
   .content-header {
     width: 80%;
     padding: 0 5%;
@@ -923,7 +926,7 @@ button:hover {
 
     p {
       width: 100%;
-      font-size: 15px;
+      font-size: 13px;
       padding: 20px 0 40px 0;
     }
 
