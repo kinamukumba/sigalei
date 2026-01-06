@@ -470,7 +470,7 @@ button:hover {
 }
 
 .section-flex{
-  padding: 160px 0 0 0;
+  padding-top: 160px;
 }
 
 /*MAIN CONTENT*/
@@ -585,7 +585,8 @@ button:hover {
 .content-about{
   width: 70%;
   height: 100vh;
-  padding: 160px 15% 30px 15%;
+  padding-left:15%;
+  padding-right: 15%;
   /*border-top: solid 1px rgba(128, 128, 128, 0.07);*/
 
   .subtitle{
@@ -950,6 +951,10 @@ button:hover {
         margin-bottom: 1%;
       }
     }
+  }
+
+  .section-flex{
+    padding-top: 80px;
   }
 
 
