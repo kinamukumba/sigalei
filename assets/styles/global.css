@@ -604,6 +604,15 @@ button:hover {
       color: var(--sigalei-bcg-red);
     }
   }
+
+  .text{
+    padding: 20px 10px 10px 10px;
+    font-size: 18px;
+    i{
+      font-size: 18px;
+      color: var(--sigalei-bcg-red);
+    }
+  }
 }
 
 /*Login & Sign-up*/
@@ -952,6 +961,19 @@ button:hover {
         margin-bottom: 1%;
       }
     }
+  }
+
+  .content-about{
+     width: 90%;
+     padding-left:5%;
+  padding-right: 5%;
+
+  .text{
+    font-size: 15px;
+    i{
+      font-size: 15px;
+    }
+  }
   }
 
   /*Login & Sign-up*/
