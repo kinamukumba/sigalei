@@ -3,7 +3,7 @@ const optionMenu = document.querySelectorAll(
   ".content-menu .close-menu i," + ".content-header .menu-mobile i"
 );
 var menu = document.querySelector(".content-menu");
-var spaceElement = document.querySelector('.section-flex');
+var spaceElement = document.querySelectorAll('.section-flex');
 
 
 
@@ -28,7 +28,12 @@ if (clinksClicked) {
   clinksClicked.forEach((link) => {
     link.onclick = () => {
       menu.classList.remove("open");
-      spaceElement.style.paddingTop = '180px'
+      /*spaceElement.forEach((el)=>{
+        el.style.paddingTop = '180px'
+      })
+
+        const animateElement = Array.from(spaceElement);
+        log*/
     };
   });
 }

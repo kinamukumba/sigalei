@@ -470,7 +470,7 @@ button:hover {
 }
 
 .section-flex{
-  padding-top: 20px;
+  padding-top: 160px;
 }
 
 /*MAIN CONTENT*/
@@ -479,7 +479,9 @@ button:hover {
   height: auto;
   padding: 160px 0 0 0;
 }
-
+.section-hero{
+  /*background-color: red;*/
+}
 .main-body .content-hero {
   width: 60%;
   height: auto;
@@ -541,7 +543,7 @@ button:hover {
     flex-direction: row;
     justify-content: space-between;
     place-items: center;
-    padding: 70px 0;
+    padding: 70px 0 0 0;
     gap: 2%;
 
     .card-num {
@@ -951,11 +953,6 @@ button:hover {
       }
     }
   }
-
-  .section-flex{
-    padding-top: 30px;
-  }
-
 
   /*Login & Sign-up*/
   .container-login {
