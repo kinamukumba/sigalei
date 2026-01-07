@@ -3,6 +3,11 @@ const optionMenu = document.querySelectorAll(
   ".content-menu .close-menu i," + ".content-header .menu-mobile i"
 );
 var menu = document.querySelector(".content-menu");
+var spaceElement = document.querySelector('.section-flex');
+
+
+
+
 if (optionMenu && menu) {
   console.log(optionMenu);
 
@@ -23,6 +28,7 @@ if (clinksClicked) {
   clinksClicked.forEach((link) => {
     link.onclick = () => {
       menu.classList.remove("open");
+      spaceElement.style.paddingTop = '180px'
     };
   });
 }
