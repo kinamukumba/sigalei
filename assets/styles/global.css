@@ -680,20 +680,18 @@ button:hover {
 
     .card{
       width: 90%;
-      min-height: 140px;
+      min-height: 120px;
       height: auto;
       background-color: rgba(202, 0, 50, 0.068);
       border-radius: 20px;
       display: flex;
       flex-direction: column;
       padding: 20px 5%;
+      margin-bottom: 2%;
 
       .title{
         font-size: 18px;
 
-        i{
-
-        }
       }
 
       .text{
@@ -1126,6 +1124,10 @@ button:hover {
   .content-work{
     .grid-card{
       grid-template-columns: repeat(1, 1fr);
+      gap: 0;
+      .card{
+        margin-bottom: 3%;
+      }
     }
   }
 
