@@ -3,10 +3,7 @@ const optionMenu = document.querySelectorAll(
   ".content-menu .close-menu i," + ".content-header .menu-mobile i"
 );
 var menu = document.querySelector(".content-menu");
-var spaceElement = document.querySelectorAll('.section-flex');
-
-
-
+var spaceElement = document.querySelectorAll(".section-flex");
 
 if (optionMenu && menu) {
   console.log(optionMenu);
@@ -20,6 +17,7 @@ if (optionMenu && menu) {
   };
 }
 
+/* Verify link */
 const clinksClicked = document.querySelectorAll(
   ".content-menu .list-itens-nav li a"
 );
@@ -56,5 +54,22 @@ if (authPath) {
   authPath[3].onclick = () => {
     window.location.href = "./auth/sign-up.html";
     menu.classList.remove("open");
+  };
+}
+
+/*  */
+var mask = document.querySelector(".mask");
+var formHelp = document.querySelector(".form-help");
+if (mask && formHelp) {
+  const btnCtaHelp = document.querySelector(".content-hero .btn-cta .btnHelp");
+  btnCtaHelp.onclick = () => {
+    mask.classList.add("open");
+    mask.append(formHelp);
+    formHelp.classList.add("open");
+    document.querySelector(".close-form").onclick = () => {
+      mask.classList.remove("open");
+      mask.removeChild(formHelp);
+      formHelp.classList.remove("open");
+    };
   };
 }

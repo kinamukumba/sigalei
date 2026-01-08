@@ -88,6 +88,7 @@
 
     </head>
     <body>
+        <div class="mask"></div>
         <div class="loader">
             <div class="spinner center">
                 <div class="spinner-blade"></div>
@@ -306,19 +307,54 @@
                         <div class="card">
                             <h3 class="title"><i>5º</i>Atendimento jurídico</h3>
                             <p class="text">
-                                atendimento é realizado de forma segura, confidencial e profissional.
+                                atendimento é realizado de forma segura,
+                                confidencial e profissional.
                             </p>
                         </div>
 
                         <div class="card">
-                            <h3 class="title"><i>6º</i>Acompanhamento e confiança</h3>
-                            <p class="text">O usuário acompanha o andamento do seu atendimento pela plataforma, com transparência e segurança do início ao fim.</p>
+                            <h3 class="title"><i>6º</i>Acompanhamento e
+                                confiança</h3>
+                            <p class="text">O usuário acompanha o andamento do
+                                seu atendimento pela plataforma, com
+                                transparência e segurança do início ao fim.</p>
                         </div>
                     </div>
                 </section>
             </main>
         </div>
 
+        <!-- COMPONENT HIDDEN -->
+        <div class="form-help">
+            <div class="close-form">
+                <i class="ri-close-large-line"></i>
+            </div>
+            <form action class="form-data">
+                <h4>Conte-nos seu problema</h4>
+                <p class="text">Explique seu problema detalhadamente, receba
+                    orientação em poucos minutos.</p>
+                <div class="input">
+                    <input type="text" name="nomehelp" id="nomehelp"
+                        placeholder="Coloque o seu nome completo">
+                </div>
+                <div class="input">
+                    <input type="email" name="emaihelp" id="emaihelp"
+                        placeholder="Coloque o seu email">
+                </div>
+                <div class="input">
+                    <input type="text" name="telhelp" id="telhelp"
+                        placeholder="Coloque o seu nº de telefone">
+                </div>
+                <div class="input">
+                    <textarea name="texthelp" id="texthelp" placeholder="Escreve o seu problema"></textarea>
+                </div>
+
+
+                <div class="btn-form">
+                    <button><i class="ri-send-plane-fill"></i> Enviar</button>
+                </div>
+            </form>
+        </div>
         <script src="./hooks/useLoadPage.js"></script>
         <script src="./assets/script/script.js"></script>
     </body>
