@@ -1257,7 +1257,8 @@ button:hover {
 
 
   .footer-body{
-
+    width: 90%;
+    padding: 60px 5% 30px 5%;
     .content-footer{
       flex-direction: column;
 
