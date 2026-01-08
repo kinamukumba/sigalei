@@ -57,6 +57,7 @@ body {
   overflow-x: hidden;
   min-height: 100vh;
   margin: 0;
+  position: relative;
   background: var(--sigalei-bcg-white);
 }
 
@@ -383,7 +384,9 @@ button:hover {
   }
 }
 
-.form-help.open{display: flex;}
+.form-help.open {
+  display: flex;
+}
 
 
 .contente-body {
@@ -765,7 +768,7 @@ button:hover {
 
 
 .content-work {
-  height: 100vh;
+  height: auto;
 
   .subtitle {
     color: var(--sigalei-bcg-red);
@@ -813,6 +816,109 @@ button:hover {
     }
   }
 }
+
+
+
+
+
+
+/*Footer*/
+.footer-body {
+  margin-top: 7%;
+  width: 70%;
+  height: auto;
+  padding: 60px 15% 30px 15%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(202, 0, 50, 0.068);
+
+
+  .content-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: solid 1px rgba(202, 0, 50, 0.26);
+    gap: 5%;
+
+
+    .new-section {
+      display: flex;
+      flex-direction: column;
+
+      .img-logo img {
+        width: auto;
+        height: 50px;
+      }
+
+      h6.subtitle {
+        font-size: 16px;
+        font-weight: 700;
+        padding: 5px 0;
+      }
+
+      .text {
+        font-size: 16px;
+        padding: 10px 0;
+      }
+
+      .input {
+        width: 96%;
+        min-height: 50px;
+        padding: 0 2%;
+        border-radius: 5px;
+        margin-bottom: 3%;
+        border: 1px solid rgba(255, 255, 255, 0.04);
+        background-color: rgba(126, 126, 126, 0.13);
+
+        input {
+          width: 100%;
+          height: 50px;
+          background-color: transparent;
+        }
+      }
+
+    }
+
+    .links {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      gap: 15%;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+
+        p {
+          font-size: 16px;
+          font-weight: 700;
+          padding-bottom: 20px;
+        }
+
+        li {
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+
+  .bottom{
+    padding: 30px 0 0 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+  }
+}
+
+
+
 
 /*Login & Sign-up*/
 .container-login {
@@ -1147,6 +1253,23 @@ button:hover {
         }
       }
     }
+  }
+
+
+  .footer-body{
+
+    .content-footer{
+      flex-direction: column;
+
+      .links{
+        flex-direction: column;
+       
+        ul{
+          padding-top: 50px;
+        }
+      }
+    }
+
   }
 
 
