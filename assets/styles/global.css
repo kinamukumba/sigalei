@@ -585,7 +585,8 @@ button:hover {
 }
 
 .section-flex {
-  padding-top: 160px;
+  padding-top: 0px;
+  margin-top: 160px;
   height: 100vh;
 }
 
@@ -818,7 +819,24 @@ button:hover {
 }
 
 
+.content-service {
+  height: auto;
 
+  .subtitle {
+    color: var(--sigalei-bcg-red);
+    font-weight: 700;
+    padding-bottom: 10px;
+  }
+
+  .title {
+    font-size: 30px;
+
+    i {
+      font-size: 30px;
+      color: var(--sigalei-bcg-red);
+    }
+  }
+}
 
 
 
