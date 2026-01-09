@@ -836,6 +836,91 @@ button:hover {
       color: var(--sigalei-bcg-red);
     }
   }
+
+  .grid-card {
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    gap: 2%;
+
+    .card {
+      width: 90%;
+      min-height: 280px;
+      height: auto;
+      background-color: rgba(202, 0, 50, 0.068);
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 5%;
+      margin-bottom: 2%;
+
+      .title-card {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        color: var(--sigalei-bcg-red);
+        font-weight: 700;
+        gap: 2%;
+
+        .icon {
+          min-width: 50px;
+          max-width: 50px;
+          width: 50px;
+          min-height: 50px;
+          max-height: 50px;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          background-color: rgba(202, 0, 50, 0.123);
+
+          i {
+            font-size: 20px;
+            color: var(--sigalei-bcg-red);
+          }
+        }
+      }
+
+      .text {
+        padding: 20px 10px 0 10px;
+      }
+
+      .list {
+        padding: 20px 10px;
+
+        p {
+          font-weight: 700;
+        }
+
+        li {
+          padding: 10px 0 0 10px;
+        }
+      }
+
+      button {
+        width: 150px;
+        height: 45px;
+        border-radius: 5px;
+        cursor: pointer;
+        color: var(--sigalei-bcg-white);
+        background-color: var(--sigalei-bcg-red);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        gap: 5%;
+
+
+        i {
+          color: var(--sigalei-bcg-white);
+        }
+      }
+    }
+  }
 }
 
 
@@ -925,7 +1010,7 @@ button:hover {
     }
   }
 
-  .bottom{
+  .bottom {
     padding: 30px 0 0 0;
     width: 100%;
     display: flex;
@@ -1274,16 +1359,17 @@ button:hover {
   }
 
 
-  .footer-body{
+  .footer-body {
     width: 90%;
     padding: 60px 5% 30px 5%;
-    .content-footer{
+
+    .content-footer {
       flex-direction: column;
 
-      .links{
+      .links {
         flex-direction: column;
-       
-        ul{
+
+        ul {
           padding-top: 50px;
         }
       }
@@ -1407,7 +1493,7 @@ button:hover {
   }
 
 
-  .content-work {
+  .content-work, .content-service {
     .grid-card {
       grid-template-columns: repeat(1, 1fr);
       gap: 0;
