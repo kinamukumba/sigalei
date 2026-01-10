@@ -18,6 +18,6 @@ if (loader) {
         setTimeout(() => {
         loader.classList.add("hidden");
       }, 100);
-    }
+    }                                                                                                                                                                                                                                                                              
   };
 }
