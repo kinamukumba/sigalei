@@ -40,7 +40,7 @@ if (clinksClicked) {
 const authPath = document.querySelectorAll(
   ".itens-btn li button," + ".content-menu .itens-btn li button"
 );
-if (authPath) {
+if (authPath.length > 0) {
   authPath[0].onclick = () => {
     window.location.href = "./auth/login.html";
   };
@@ -72,4 +72,52 @@ if (mask && formHelp) {
       formHelp.classList.remove("open");
     };
   };
+}
+
+/* CONTROLE SIGN STEP */
+const contentSignStep = document.querySelector(".sign-steps");
+if (contentSignStep) {
+  const btnChoose = document.querySelectorAll(".step .card-choose button");
+  const step = document.querySelectorAll(".step.form");
+  const textChoose = document.querySelector(".context-step");
+  const btnBack = document.querySelectorAll("span.back-step");
+
+  const newBtnChoose = Array.from(btnChoose);
+  const newStep = Array.from(step);
+
+  newBtnChoose.forEach((ch) => {
+    ch.onclick = () => {
+      const stepChoose = document.querySelector(".step.choose");
+      stepChoose.classList.remove("on");
+      stepChoose.classList.add("off");
+
+      const index = newBtnChoose.indexOf(ch);
+
+      for (let i = 0; i < newStep.length; i++) {
+        newStep[i].classList.add("off");
+      }
+
+      newStep[index].classList.remove("off");
+      newStep[index].classList.add("on");
+
+      if (index == 0) {
+        textChoose.innerText = "Conta usuário";
+      }
+      if (index == 1) {
+        textChoose.innerText = "Conta advogado";
+      }
+
+      btnBack.forEach((btn) => {
+        btn.onclick = () => {
+          for (let i = 0; i < newStep.length; i++) {
+            newStep[i].classList.add("off");
+          }
+          stepChoose.classList.remove("off");
+          stepChoose.classList.add("on");
+
+          textChoose.innerText = "Como você deseja usar a SIGALEI?";
+        };
+      });
+    };
+  });
 }

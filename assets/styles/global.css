@@ -71,7 +71,7 @@ html, body {
 
 /*Global*/
 button:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 /*MASK*/
@@ -673,6 +673,7 @@ button:hover {
       justify-content: center;
       padding: 10px 5%;
       border-radius: 5px;
+      background-color: var(--sigalei-bcg-white);
       box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 
       .icon {
@@ -1023,7 +1024,7 @@ button:hover {
 
 
 /*Login & Sign-up*/
-.container-login {
+.container-auth {
   width: 100%;
   height: auto;
   display: flex;
@@ -1041,6 +1042,7 @@ button:hover {
   p {
     padding: 20px 0 30px 0;
     font-size: 30px;
+    text-align: center;
   }
 
   form {
@@ -1196,6 +1198,112 @@ button:hover {
 }
 
 
+/*Controle sign*/
+.sign-steps {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 00px;
+
+
+  .step {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+
+    form{
+      width: 60%;
+
+      span.back-step{
+        padding-bottom: 10px;
+        font-size: 16px;
+        font-weight: 700;
+        padding-top: 30px;
+        cursor: pointer;
+      }
+    }
+
+    .card-choose {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--sigalei-bcg-white);
+      border-radius: 10px;
+      padding: 20px 0;
+      cursor: pointer;
+      margin-top: 20px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
+      .icon {
+        min-width: 70px;
+        max-width: 70px;
+        width: 70px;
+        min-height: 70px;
+        max-height: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: rgba(202, 0, 50, 0.123);
+
+        i {
+          font-size: 40px;
+          color: var(--sigalei-bcg-red);
+        }
+      }
+
+
+      h1{
+        font-size: 25px;
+        font-weight: 700;
+        text-align: center;
+        padding: 10px 0;
+      }
+      p{
+        font-size: 16px;
+        padding: 0;
+        text-align: center;
+        padding-bottom: 30px;
+      }
+
+      button {
+      width: 70%;
+      height: 45px;
+      border-radius: 5px;
+      cursor: pointer;
+      color: var(--sigalei-bcg-white);
+      background-color: var(--sigalei-bcg-red);
+    }
+
+    }
+
+    .card-choose:hover{
+      transform: scale(1.02);
+    }
+  }
+}
+
+.step.off {
+  display: none;
+}
+.step.on{
+  animation: zoom 1s alternate;
+}
+@keyframes zoom{
+  0%{transform: scale(0);}
+  100%{transform: scale(100%);}
+}
+
+
 
 
 
@@ -1261,7 +1369,7 @@ button:hover {
 
 
   /*Login & Sign-up*/
-  .container-login {
+  .container-auth {
     form {
       width: 50%;
     }
@@ -1378,7 +1486,7 @@ button:hover {
 
 
   /*Login & Sign-up*/
-  .container-login {
+  .container-auth {
     form {
       width: 70%;
     }
@@ -1520,9 +1628,21 @@ button:hover {
 
 
   /*Login & Sign-up*/
-  .container-login {
+  .container-auth {
     form {
       width: 90%;
+    }
+  }
+
+  .sign-steps{
+    width: 90%;
+
+    .step{
+      flex-direction: column;
+
+      form{
+        width: 100%;
+      }
     }
   }
 }
